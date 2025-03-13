@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b29c323d435f634594b2a2582162571, type: 3}
-  m_Name: Priest_Weapon
+  m_Script: {fileID: 11500000, guid: b16884fc5ef634049b078b967c6f2e54, type: 3}
+  m_Name: Thief_Armor
   m_EditorClassIdentifier: 
-  weaponName: Marteau de guerre / masse
-  diceDamage: 6
-  range: 0
+  armorName: Armure de cuir
+  armorDefence: 2
   price: 4

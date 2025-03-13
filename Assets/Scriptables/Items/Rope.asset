@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Rope
   m_EditorClassIdentifier: 
   itemName: Corde de 15m
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 2

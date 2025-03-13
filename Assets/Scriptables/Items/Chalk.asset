@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chalk
   m_EditorClassIdentifier: 
   itemName: Craie
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 1

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Care_kit
   m_EditorClassIdentifier: 
   itemName: Trousse de soins
-  quantity: 0
+  quantity: 1
   effectDice: 1
   price: 3

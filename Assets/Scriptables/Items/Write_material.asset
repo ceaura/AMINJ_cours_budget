@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Write_material
   m_EditorClassIdentifier: 
   itemName: "Mat\xE9riel d'\xE9criture"
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 5

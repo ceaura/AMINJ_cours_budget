@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lantern
   m_EditorClassIdentifier: 
   itemName: Lanterne et huile
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 1

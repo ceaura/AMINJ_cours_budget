@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lighter
   m_EditorClassIdentifier: 
   itemName: Briquet en silex
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 1

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bottle
   m_EditorClassIdentifier: 
   itemName: Outre 2litres
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 1

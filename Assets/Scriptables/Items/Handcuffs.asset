@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Handcuffs
   m_EditorClassIdentifier: 
   itemName: Menottes en acier
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 2

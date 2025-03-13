@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Lock_pick
   m_EditorClassIdentifier: 
   itemName: Outils de crochetage
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 5

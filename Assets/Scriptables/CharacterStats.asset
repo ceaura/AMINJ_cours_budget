@@ -12,38 +12,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d362d82afc3298f4f9755d2ab2dfbeb2, type: 3}
   m_Name: CharacterStats
   m_EditorClassIdentifier: 
+  playerName: David
   niveau: 0
-  dedevie: 0
-  FOR: 0
-  DEX: 0
-  CON: 0
-  INT: 0
-  SAG: 0
-  CHA: 0
-  FOR_mod: 0
-  DEX_mod: 0
-  CON_mod: 0
-  INT_mod: 0
-  SAG_mod: 0
-  CHA_mod: 0
-  FOR_bon: 0
-  DEX_bon: 0
-  CON_bon: 0
-  INT_bon: 0
-  SAG_bon: 0
-  CHA_bon: 0
-  PV: 0
-  PV_bon: 0
-  PV_rest: 0
-  DEF: 0
-  DEF_bon: 0
-  DMG_Contact: 0
-  DMG_Contact_Bon: 0
-  DMG_Distance: 0
-  DMG_Distanc_Bon: 0
-  DMG_Magique: 0
-  DMG_Magique_Bon: 0
-  DEDegats: 0
-  DEDegats2: 0
-  DEF_Equipment1: 0
-  DEF_Equipment2: 0
+  caracteristiquesMod:
+  - name: 0
+    value: 0
+    bonus: 0
+    mod: 0
+  - name: 1
+    value: 0
+    bonus: 0
+    mod: 0
+  - name: 2
+    value: 0
+    bonus: 0
+    mod: 0
+  - name: 3
+    value: 0
+    bonus: 0
+    mod: 0
+  - name: 4
+    value: 0
+    bonus: 0
+    mod: 0
+  - name: 5
+    value: 0
+    bonus: 0
+    mod: 0
+  caracteristiques:
+  - name: 0
+    value: 0
+    bonus: 0
+  - name: 0
+    value: 0
+    bonus: 0
+  - name: 0
+    value: 0
+    bonus: 0
+  - name: 0
+    value: 0
+    bonus: 0
+  - name: 0
+    value: 0
+    bonus: 0
+  race: {fileID: 0}
+  profiles: {fileID: 0}

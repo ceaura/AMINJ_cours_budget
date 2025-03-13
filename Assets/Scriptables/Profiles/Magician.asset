@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35ef59c7200b74fbca8867cd32fade, type: 3}
+  m_Name: Magician
+  m_EditorClassIdentifier: 
+  armes:
+  - {fileID: 11400000, guid: c75f05ca2aabb6b4391854352e09e3f1, type: 2}
+  armures:
+  - {fileID: 11400000, guid: 3e735e622b045224986f3b92d0f19abd, type: 2}
+  capacites:
+  - {fileID: 11400000, guid: 6ba325d753d21e7428d0f1c5cf9bad2d, type: 2}
+  - {fileID: 11400000, guid: 7c180f460eee63e499e776a72afb9b76, type: 2}
+  - {fileID: 11400000, guid: f4fe9f8dbc1b2344199a1b7dfffb5b20, type: 2}
+  equipements:
+  - {fileID: 11400000, guid: 7dcfab18a1880ef45868dd5ffe57db4d, type: 2}
+  - {fileID: 11400000, guid: 7d0bc394e5bce1744a49a2859fc7b927, type: 2}
+  - {fileID: 11400000, guid: f17c8b0db3f418a43b60d8db89e78f34, type: 2}
+  - {fileID: 11400000, guid: a6d10ba0872125743850039652ff64c8, type: 2}
+  - {fileID: 11400000, guid: 045a895f16eb39141b9932697a978497, type: 2}
+  - {fileID: 11400000, guid: 7a3cf9855607df648bfc3b63a20e2d09, type: 2}
+  - {fileID: 11400000, guid: cb378e02be1c05a42b36caf66dba4c59, type: 2}
+  - {fileID: 11400000, guid: c3b42762e12f1814b8f60f6b7270ec1a, type: 2}
+  - {fileID: 11400000, guid: 064a49628fc56484ab2bfe2101377d8c, type: 2}

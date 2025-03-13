@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Food_ration
   m_EditorClassIdentifier: 
   itemName: Rations de nourriture (semaine)
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 4

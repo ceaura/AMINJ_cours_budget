@@ -4,18 +4,27 @@ using UnityEngine;
 public class CharacterStats : ScriptableObject
 {
     public string playerName;
-    public int niveau, dedevie,
-            FOR, DEX, CON, INT, SAG, CHA,
-            FOR_mod, DEX_mod, CON_mod, INT_mod, SAG_mod, CHA_mod,
-            FOR_bon, DEX_bon, CON_bon, INT_bon, SAG_bon, CHA_bon,
-            PV, PV_bon, PV_rest, DEF, DEF_bon,
-            DMG_Contact, DMG_Contact_Bon,
-            DMG_Distance, DMG_Distanc_Bon,
-            DMG_Magique, DMG_Magique_Bon;
+    public enum StatsNames
+    {
+        FOR, DEX, CON, INT, SAG, CHA, PV, DEF, DMG_Contact, DMG_Distance, DMG_Magique
+    }
+    [System.Serializable]
+    public class Caracteristique
+    {
+        public StatsNames name;
+        public int value;
+        public int bonus;
+    }
 
-    public Weapon[] armes = new Weapon[2];
-    public Armor[] armures = new Armor[2];
-    public Skill[] capacites = new Skill[12];
-    public Item[] equipements = new Item[12];
+    [System.Serializable]
+    public class CaracteristiqueMod : Caracteristique
+    {
+        public int mod;
+    }
 
+    public int niveau;
+    public CaracteristiqueMod[] caracteristiquesMod = new CaracteristiqueMod[6];
+    public Caracteristique[] caracteristiques = new Caracteristique[5];
+    public Race race;
+    public Profiles profiles;
 }

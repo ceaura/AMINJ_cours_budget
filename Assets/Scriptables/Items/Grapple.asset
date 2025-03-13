@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Grapple
   m_EditorClassIdentifier: 
   itemName: Grappin
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 2

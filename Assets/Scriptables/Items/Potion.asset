@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Potion
   m_EditorClassIdentifier: 
   itemName: Potion de soins
-  quantity: 0
+  quantity: 1
   effectDice: 8
   price: 10

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bag
   m_EditorClassIdentifier: 
   itemName: Sac d'aventurier
-  quantity: 0
+  quantity: 1
   effectDice: 0
   price: 1

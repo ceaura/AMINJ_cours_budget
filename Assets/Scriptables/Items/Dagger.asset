@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b16884fc5ef634049b078b967c6f2e54, type: 3}
-  m_Name: Robber_Armor
+  m_Script: {fileID: 11500000, guid: a728e6f89e5196d4887bcf9fb3e2a00c, type: 3}
+  m_Name: Dagger
   m_EditorClassIdentifier: 
-  armorName: Armure de cuir
-  armorDefence: 2
-  price: 4
+  itemName: Dague
+  quantity: 5
+  effectDice: 0
+  price: 3
