@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d15d638d2c247e4086ebe5fafa7052b, type: 3}
   m_Name: CharacterDetails
   m_EditorClassIdentifier: 
-  characterName: 
-  characterGender: 
-  characterHeight: 
-  characterOld: 
-  characterWeigth: 
-  characterDescription: 
+  characterName: Sylphia
+  characterGender: Homme
+  characterHeight: 160
+  characterOld: 254
+  characterWeigth: 40
+  characterDescription: Noice
