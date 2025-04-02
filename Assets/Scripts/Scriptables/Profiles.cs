@@ -4,8 +4,8 @@ using UnityEngine;
 public class Profiles : ScriptableObject
 {
     public int dedevie;
-    public Weapon[] armes;
-    public Armor[] armures;
-    public Skill[] capacites;
-    public Item[] equipements;
+    public Weapon[] weapons;
+    public Armor[] armors;
+    public Skill[] skills;
+    public Item[] equipment;
 }

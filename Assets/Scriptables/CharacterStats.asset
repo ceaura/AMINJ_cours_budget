@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d362d82afc3298f4f9755d2ab2dfbeb2, type: 3}
   m_Name: CharacterStats
   m_EditorClassIdentifier: 
-  playerName: David
+  playerName: Ale
   niveau: 0
   caracteristiquesMod:
   - name: 0
@@ -40,20 +40,21 @@ MonoBehaviour:
     bonus: 0
     mod: 0
   caracteristiques:
-  - name: 0
-    value: 0
+  - name: 6
+    value: 4
     bonus: 0
-  - name: 0
-    value: 0
+  - name: 7
+    value: 5
     bonus: 0
-  - name: 0
-    value: 0
+  - name: 8
+    value: 1
     bonus: 0
-  - name: 0
-    value: 0
+  - name: 9
+    value: 1
     bonus: 0
-  - name: 0
-    value: 0
+  - name: 10
+    value: 1
     bonus: 0
-  race: {fileID: 0}
-  profiles: {fileID: 0}
+  race: {fileID: 11400000, guid: 61cb1e4fef8d5644aa66b843a71181f1, type: 2}
+  profiles: {fileID: 11400000, guid: 0047553a1c8a19b43a1dfdc69c8e687e, type: 2}
+  characterDetails: {fileID: 11400000, guid: 30ae74cf78c1fec4cae6f29745bd79c3, type: 2}

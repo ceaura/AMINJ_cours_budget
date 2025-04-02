@@ -22,9 +22,10 @@ public class CharacterStats : ScriptableObject
         public int mod;
     }
 
-    public int niveau;
+    public int level;
     public CaracteristiqueMod[] caracteristiquesMod = new CaracteristiqueMod[6];
     public Caracteristique[] caracteristiques = new Caracteristique[5];
     public Race race;
     public Profiles profiles;
+    public CharacterDetails characterDetails;
 }

@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a35ef59c7200b74fbca8867cd32fade, type: 3}
   m_Name: Prowler
   m_EditorClassIdentifier: 
-  armes:
-  - {fileID: 11400000, guid: 2b03ed8235b3c1f40968c9befd9ab4c0, type: 2}
-  armures:
-  - {fileID: 11400000, guid: e94a36753e17f194b8d2b8b43e642b11, type: 2}
-  - {fileID: 11400000, guid: eb50feb92f08d5440b6b30c892b41cce, type: 2}
-  capacites:
-  - {fileID: 11400000, guid: f0790e497712e004a8ef3bc26a1057f8, type: 2}
+  dedevie: 8
+  weapons:
+  - {fileID: 11400000, guid: d597054f1b2f9ac4b86d3948c58b478b, type: 2}
+  - {fileID: 11400000, guid: 51a25087223b42146b0538ea59e6045d, type: 2}
+  armors:
+  - {fileID: 11400000, guid: bb0223d997868c84ca91d0b170378f0c, type: 2}
+  skills:
   - {fileID: 11400000, guid: 28b5aa45395c21240a62a98abee20983, type: 2}
+  - {fileID: 11400000, guid: f0790e497712e004a8ef3bc26a1057f8, type: 2}
   - {fileID: 11400000, guid: 9e962b644c7597b4aa8d38830efa4637, type: 2}
-  equipements:
-  - {fileID: 11400000, guid: 7dcfab18a1880ef45868dd5ffe57db4d, type: 2}
+  equipment:
   - {fileID: 11400000, guid: 7d0bc394e5bce1744a49a2859fc7b927, type: 2}
   - {fileID: 11400000, guid: f17c8b0db3f418a43b60d8db89e78f34, type: 2}
   - {fileID: 11400000, guid: a6d10ba0872125743850039652ff64c8, type: 2}

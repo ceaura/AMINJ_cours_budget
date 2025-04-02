@@ -18,14 +18,7 @@ public class DraggableStat : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
-        for (int i = 0; i < m_TextMeshProUGUIs.Length; i++)
-        {
-            m_TextMeshProUGUIs[i].raycastTarget = false;
-        }
-        for (int i = 0; i < images.Length; i++)
-        {
-            images[i].raycastTarget = false;
-        }
+        ActiveDrag(false);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -36,14 +29,7 @@ public class DraggableStat : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnEndDrag(PointerEventData eventData)
     {
         SwitchParent(parentAfterDrag);
-        for (int i = 0; i < m_TextMeshProUGUIs.Length; i++)
-        {
-            m_TextMeshProUGUIs[i].raycastTarget = true;
-        }
-        for (int i = 0; i < images.Length; i++)
-        {
-            images[i].raycastTarget = true;
-        }
+        ActiveDrag(true);
     }
 
     public void SetParentAfterDrag(Transform parentAfterDrg)
@@ -58,5 +44,24 @@ public class DraggableStat : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         transform.SetParent(parent);
         _draggableParent = parent;
+    }
+
+    public int GetStat()
+    {
+        return int.Parse(transform.GetChild(0).GetComponent<TextMeshProUGUI>().text);
+    }
+
+    public void ActiveDrag(bool isActive)
+    {
+        for (int i = 0; i < m_TextMeshProUGUIs.Length; i++)
+        {
+            m_TextMeshProUGUIs[i].raycastTarget = isActive;
+            m_TextMeshProUGUIs[i].gameObject.SetActive(isActive);
+        }
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].raycastTarget = isActive;
+            images[i].gameObject.SetActive(isActive);
+        }
     }
 }
