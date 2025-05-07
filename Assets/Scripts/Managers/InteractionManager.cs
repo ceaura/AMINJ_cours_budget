@@ -26,11 +26,13 @@ public class InteractionManager : MonoBehaviour
     public KeyCode m_DownKey;
     public KeyCode m_SelectKey;
     public NPCConversation conversation;
+    
+    private bool isConversationFinished = false;
 
     public InteractionHandler  testCharacteristic;
     private void Update()
     {
-        if (ConversationManager.Instance != null)
+        if (ConversationManager.Instance != null && !isConversationFinished)
         {
             UpdateConversationInput();
         }
@@ -38,7 +40,7 @@ public class InteractionManager : MonoBehaviour
     
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (collider.gameObject.CompareTag("Player") && !isConversationFinished)
         {
             ConversationManager.Instance.StartConversation(conversation);
         }
@@ -55,6 +57,17 @@ public class InteractionManager : MonoBehaviour
             else if (Input.GetKeyDown(m_SelectKey))
                 ConversationManager.Instance.PressSelectedOption();
         }
+
+        if (isConversationFinished)
+        {
+            ConversationManager.Instance.EndConversation();
+        }
+    }
+
+    public void DeleteConservation()
+    {
+        isConversationFinished = true;
+        ConversationManager.Instance.EndConversation();
     }
 }
 

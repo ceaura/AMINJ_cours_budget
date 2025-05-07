@@ -15,6 +15,6 @@ MonoBehaviour:
   zone: 3
   interactionName: Mayor
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 5758a5e1282d34646b70982559f7ed12, type: 2}
+  - {fileID: 11400000, guid: 9a5f186e2b83e554198266af550adf2e, type: 2}
+  - {fileID: 11400000, guid: 23047f610210a4743998f375012960d8, type: 2}

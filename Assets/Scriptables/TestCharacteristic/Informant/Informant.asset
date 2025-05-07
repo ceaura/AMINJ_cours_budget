@@ -15,6 +15,6 @@ MonoBehaviour:
   zone: 2
   interactionName: Informant
   options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f880603233ba7974aa50b77fa4b370a3, type: 2}
+  - {fileID: 11400000, guid: 9f4873fa316676a42846b8e3d9bbea33, type: 2}
+  - {fileID: 11400000, guid: e4a8e47287f81b840a0a49d4f4467af2, type: 2}

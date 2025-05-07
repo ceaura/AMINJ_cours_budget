@@ -1,9 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance;
+
+    [SerializeField] private GameObject GuardsInteraction;
+    [SerializeField] private GameObject InformantInteraction;
+    [SerializeField] private GameObject MayorInteraction;
+    [SerializeField] private GameObject EscapeInteraction;
+    [SerializeField] private Animator doorGuardsAnimator;
+
+    private InteractionManager interactionManager;
 
     public enum Zone
     {
@@ -68,20 +77,26 @@ public class GameStateManager : MonoBehaviour
         switch (zone)
         {
             case Zone.Guards:
+                GuardsInteraction.SetActive(false);
+                doorGuardsAnimator.SetTrigger("Open");
+                interactionManager = GuardsInteraction.GetComponent<InteractionManager>();
+                interactionManager.DeleteConservation();
                 Debug.Log("Finit guards");
                 break;
             case Zone.Informant:
+                InformantInteraction.SetActive(false);
+                interactionManager = InformantInteraction.GetComponent<InteractionManager>();
                 Debug.Log("Finit informant");
                 break;
             case Zone.Mayor:
-                Debug.Log(" Finit Mayor");
+                SceneManager.LoadScene("MainMenu");
                 break;
             case Zone.Escape:
-                Debug.Log(" FinitEscape");
+                EscapeInteraction.SetActive(false);
+                Debug.Log("Finit Escape");
                 break;
-
-            
         }
+        interactionManager.DeleteConservation();
         return zoneStatuses.ContainsKey(zone) && zoneStatuses[zone].success;
     }
 }
