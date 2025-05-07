@@ -1,25 +1,7 @@
 using System;
 using DialogueEditor;
 using UnityEngine;
-using UnityEditor;
 
-
-[CustomEditor(typeof(InteractionManager))]
-public class InteractionManagerEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        DrawDefaultInspector();
-        InteractionManager dialogManager = (InteractionManager)target;
-        if (GUILayout.Button("Démarrer la conversation"))
-        {
-            if (ConversationManager.Instance != null)
-                ConversationManager.Instance.StartConversation(dialogManager.conversation);
-            else
-                Debug.LogWarning("ConversationManager.Instance est null !");
-        }
-    }
-}
 public class InteractionManager : MonoBehaviour
 {
     public KeyCode m_UpKey;
@@ -31,6 +13,7 @@ public class InteractionManager : MonoBehaviour
     private float lastInputTime = 0f;
     
     private bool isConversationFinished = false;
+    [SerializeField] private FirstPersonLook camera;
 
     public InteractionHandler  testCharacteristic;
     private void Update()
@@ -47,6 +30,16 @@ public class InteractionManager : MonoBehaviour
         {
             ConversationManager.Instance.StartConversation(conversation);
             Cursor.lockState = CursorLockMode.None;
+            camera.cameraLocked = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            camera.cameraLocked = false;
         }
     }
 

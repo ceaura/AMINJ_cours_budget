@@ -7,14 +7,14 @@ using Random = UnityEngine.Random;
 public class Dice : MonoBehaviour
 {
     public Transform[] diceFaces;
-
     new public Rigidbody rb;
-    
+
     private bool _hasStoppedRolling;
     private bool _delayFinished;
+    private float delayTimer = 1f;
 
     public static UnityAction<int> OnDiceResult;
-    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -22,10 +22,18 @@ public class Dice : MonoBehaviour
 
     private void Update()
     {
-        if (!_delayFinished) return;
-
-        if (!_hasStoppedRolling && rb.linearVelocity.sqrMagnitude == 0f)
+        if (!_delayFinished)
         {
+            delayTimer -= Time.deltaTime;
+            if (delayTimer <= 0f)
+            {
+                _delayFinished = true;
+            }
+        }
+
+        if (_delayFinished && !_hasStoppedRolling && rb.linearVelocity.sqrMagnitude == 0f)
+        {
+            Debug.Log("Dice has stopped rolling");
             _hasStoppedRolling = true;
             GetNumberOnTopFace();
         }
@@ -35,7 +43,7 @@ public class Dice : MonoBehaviour
     private int GetNumberOnTopFace()
     {
         if (diceFaces == null) return -1;
-        
+
         var topFace = 0;
         var lastYPosition = diceFaces[0].position.y;
 
@@ -47,33 +55,27 @@ public class Dice : MonoBehaviour
                 topFace = i;
             }
         }
-        
-        Debug.Log($"Dice result { topFace + 1}");
-        
+
+        Debug.Log($"Dice result {topFace + 1}");
         OnDiceResult?.Invoke(topFace + 1);
-        
+        Destroy(gameObject);
         return topFace + 1;
-        
-        
     }
-    
+
     public void RollDice(float throwForce, float rollForce)
     {
         var randomVariance = Random.Range(-1f, 1f);
         rb.AddForce(transform.forward * (throwForce * randomVariance), ForceMode.Impulse);
-        
+
         var randX = Random.Range(0f, 1f);
         var randY = Random.Range(0f, 1f);
         var randZ = Random.Range(0f, 1f);
-        
+
         rb.AddTorque(new Vector3(randX, randY, randZ) * (rollForce + randomVariance), ForceMode.Impulse);
 
-        DelayResult();
-    }
-
-    private async void DelayResult()
-    {
-        await Task.Delay(1000);
-        _delayFinished = true;
+        // Commencer le timer
+        _delayFinished = false;
+        delayTimer = 1f;
+        _hasStoppedRolling = false;
     }
 }

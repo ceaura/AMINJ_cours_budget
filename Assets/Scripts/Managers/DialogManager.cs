@@ -5,23 +5,6 @@ using UnityEngine;
 
 namespace DialogueEditor
 {
-
-    [CustomEditor(typeof(DialogManager))]
-    public class DialogManagerEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            DrawDefaultInspector();
-            DialogManager dialogManager = (DialogManager)target;
-            if (GUILayout.Button("Démarrer la conversation"))
-            {
-                if (ConversationManager.Instance != null)
-                    ConversationManager.Instance.StartConversation(dialogManager.conversation);
-                else
-                    Debug.LogWarning("ConversationManager.Instance est null !");
-            }
-        }
-    }
     public class DialogManager : MonoBehaviour
     {
         public KeyCode m_UpKey;

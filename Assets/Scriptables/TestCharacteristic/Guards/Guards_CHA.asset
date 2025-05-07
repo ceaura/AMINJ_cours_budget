@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guards_CHA
   m_EditorClassIdentifier: 
   description: Vous vous faites passez pour un marchand!
-  characteristicRequirement: 11
+  characteristicRequirement: 14
   characteristicName: Tromperie
   characteristic: 5

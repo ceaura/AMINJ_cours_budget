@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mayor_FOR
   m_EditorClassIdentifier: 
   description: Bras de fer contre le maire !
-  characteristicRequirement: 13
+  characteristicRequirement: 15
   characteristicName: Qui aura la plus grosse ?
   characteristic: 0

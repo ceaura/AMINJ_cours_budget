@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mayor_DEX
   m_EditorClassIdentifier: 
   description: Vous devez cambrioler le maire !
-  characteristicRequirement: 13
+  characteristicRequirement: 12
   characteristicName: Cambriolage
   characteristic: 1

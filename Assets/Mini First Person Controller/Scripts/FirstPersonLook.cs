@@ -10,6 +10,8 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 velocity;
     Vector2 frameVelocity;
 
+    public bool cameraLocked = false;
+
 
     void Reset()
     {
@@ -25,8 +27,17 @@ public class FirstPersonLook : MonoBehaviour
 
     void Update()
     {
+        Vector2 mouseDelta;
+        if (cameraLocked)
+        {
+            mouseDelta = new Vector2(0,0);
+
+        }
+        else
+        {
+            mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+        }
         // Get smooth velocity.
-        Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;

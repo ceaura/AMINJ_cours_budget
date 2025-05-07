@@ -13,14 +13,16 @@ public class InteractionHandler : MonoBehaviour
     [SerializeField] private InteractionDataSO interactionData;
     [SerializeField] private TextMeshProUGUI resultText;
 
-
     [SerializeField] private AudioClip[] audioClip;
     private AudioSource audioSource;
-    
 
     private int _resultDice;
     private int currentOptionIndex = -1;
     private InteractionOptionSO currentOption;
+
+    private enum Phase { Idle, WaitingForDice, WaitAfterDice }
+    private Phase currentPhase = Phase.Idle;
+    private float phaseTimer = 0f;
 
     private void OnEnable()
     {
@@ -48,26 +50,30 @@ public class InteractionHandler : MonoBehaviour
         currentOptionIndex = index;
         currentOption = interactionData.options[currentOptionIndex];
 
-        StartCoroutine(StartTestSequence());
+        playerMovement.TeleportToDice();
+        DiceThrower.Instance.RollDice();
+        currentPhase = Phase.WaitingForDice;
     }
 
     private void OnDiceResultReceived(int result)
     {
         _resultDice = result;
-        StartCoroutine(HandleAfterDice());
+        phaseTimer = 1f; // délai d'attente avant traitement
+        currentPhase = Phase.WaitAfterDice;
     }
 
-    private IEnumerator StartTestSequence()
+    private void Update()
     {
-        yield return Teleport(true);
-        DiceThrower.Instance.RollDice();
-    }
-
-    private IEnumerator HandleAfterDice()
-    {
-        yield return new WaitForSeconds(1f);
-        HandleDiceResult(_resultDice);
-        yield return Teleport(false);
+        if (currentPhase == Phase.WaitAfterDice)
+        {
+            phaseTimer -= Time.deltaTime;
+            if (phaseTimer <= 0f)
+            {
+                HandleDiceResult(_resultDice);
+                playerMovement.TeleportFromDice();
+                currentPhase = Phase.Idle;
+            }
+        }
     }
 
     private void HandleDiceResult(int diceResult)
@@ -94,6 +100,7 @@ public class InteractionHandler : MonoBehaviour
             resultText.text = "Le test a échoué, vous devez recommencer" ;
             audioSource.clip = audioClip[1];
         }
+
         audioSource.Play();
         GameStateManager.Instance.RecordInteraction(interactionData.zone, currentOptionIndex, success);
     }
@@ -115,17 +122,5 @@ public class InteractionHandler : MonoBehaviour
         Debug.LogWarning($"Stat {statName} non trouvée !");
         return 0;
     }
-
-    private IEnumerator Teleport(bool toDice)
-    {
-        //animator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(2f);
-
-        if (toDice)
-            playerMovement.TeleportToDice();
-        else
-            playerMovement.TeleportFromDice();
-
-        //animator.SetTrigger("FadeIn");
-    }
 }
+

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Informant_INT
   m_EditorClassIdentifier: 
   description: "Arriverez vous \xE0 comprendre la foule !"
-  characteristicRequirement: 5
+  characteristicRequirement: 6
   characteristicName: "R\xE9flexion"
   characteristic: 3

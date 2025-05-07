@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mayor_SAG
   m_EditorClassIdentifier: 
   description: "Serez vous assez d\xE9termin\xE9 ! "
-  characteristicRequirement: 5
+  characteristicRequirement: 2
   characteristicName: "D\xE9termination"
   characteristic: 4

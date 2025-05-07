@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Informant_CON
   m_EditorClassIdentifier: 
   description: "Vous parlez \xE0 toute la foule !"
-  characteristicRequirement: 13
+  characteristicRequirement: 15
   characteristicName: 'Foule '
   characteristic: 2

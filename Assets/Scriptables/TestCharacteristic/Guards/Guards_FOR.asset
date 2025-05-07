@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guards_FOR
   m_EditorClassIdentifier: 
   description: Vous esseyez de passer en force !
-  characteristicRequirement: 13
+  characteristicRequirement: 11
   characteristicName: Passage en force
   characteristic: 0

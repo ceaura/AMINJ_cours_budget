@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guards_DEX
   m_EditorClassIdentifier: 
   description: Vous vous fofilez dans le trou !
-  characteristicRequirement: 2
+  characteristicRequirement: 4
   characteristicName: Souplesse
   characteristic: 1

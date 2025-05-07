@@ -11,6 +11,8 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameObject MayorInteraction;
     [SerializeField] private GameObject EscapeInteraction;
     [SerializeField] private Animator doorGuardsAnimator;
+    
+    [SerializeField] private FirstPersonLook camera;
 
     private InteractionManager interactionManager;
 
@@ -89,6 +91,7 @@ public class GameStateManager : MonoBehaviour
                 Debug.Log("Finit informant");
                 break;
             case Zone.Mayor:
+                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("MainMenu");
                 break;
             case Zone.Escape:
@@ -97,6 +100,8 @@ public class GameStateManager : MonoBehaviour
                 break;
         }
         interactionManager.DeleteConservation();
+        Cursor.lockState = CursorLockMode.Locked;
+        camera.cameraLocked = false;
         return zoneStatuses.ContainsKey(zone) && zoneStatuses[zone].success;
     }
 }
