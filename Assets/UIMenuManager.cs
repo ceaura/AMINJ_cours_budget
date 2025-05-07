@@ -13,4 +13,8 @@ public class UIMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("CaracterCreation");
     }
+    public void Continue()
+    {
+        SceneManager.LoadScene("Exploration3D");
+    }
 }

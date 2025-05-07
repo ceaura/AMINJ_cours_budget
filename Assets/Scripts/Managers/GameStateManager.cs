@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
@@ -13,6 +15,16 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private Animator doorGuardsAnimator;
     
     [SerializeField] private FirstPersonLook camera;
+    
+    
+    [SerializeField] private TextMeshProUGUI forText;
+    [SerializeField] private TextMeshProUGUI chaText;
+    [SerializeField] private TextMeshProUGUI conText;
+    [SerializeField] private TextMeshProUGUI sagText;
+    [SerializeField] private TextMeshProUGUI intText;
+    [SerializeField] private TextMeshProUGUI dexText;
+    
+    [SerializeField] private CharacterStats stats;
 
     private InteractionManager interactionManager;
 
@@ -51,6 +63,16 @@ public class GameStateManager : MonoBehaviour
             if (zone != Zone.None)
                 zoneStatuses[zone] = new ZoneStatus();
         }
+    }
+
+    private void Start()
+    {
+        forText.text = stats.caracteristiquesMod[0].value.ToString();
+        dexText.text = stats.caracteristiquesMod[1].value.ToString();
+        conText.text = stats.caracteristiquesMod[2].value.ToString();
+        intText.text = stats.caracteristiquesMod[3].value.ToString();
+        sagText.text = stats.caracteristiquesMod[4].value.ToString();
+        chaText.text = stats.caracteristiquesMod[5].value.ToString();
     }
 
     public void SetZone(Zone newZone)
