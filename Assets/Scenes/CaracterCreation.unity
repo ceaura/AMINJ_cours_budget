@@ -1220,21 +1220,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595278744}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7e37376cd417bba48ad31a7674fc68bf, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1311,247 +1311,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2201735490043547257, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2201735490043547257, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2201735490043547257, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 2201735490043547257, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -540
-      objectReference: {fileID: 0}
-    - target: {fileID: 2201735490043547257, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 75
-      objectReference: {fileID: 0}
     - target: {fileID: 4387938115253474400, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_Name
       value: DialogSystem
       objectReference: {fileID: 0}
     - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].text
-      value: "Choisissez 2 des 3 capacit\xE9s de rang 1."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].text
-      value: Confirmer ?
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].text
-      value: "Entrer les informations de votre personnage \xE0 la fin de la fiche."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].text
-      value: Confirmer ?
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[14].text
-      value: "F\xE9licitation, vous avez cr\xE9\xE9 votre personnage, vous pouvez
-        maintenant partir \xE0 l'aventure !"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].endDialog
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].endDialog
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[14].endDialog
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].choices.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choice
-      value: oui
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choice
-      value: non
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].choices.Array.data[0].choice
-      value: Suivant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choice
-      value: oui
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[1].choice
-      value: Non
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].nextDialId
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].nextDialId
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].nextDialId
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].choices.Array.data[0].nextDialId
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].nextDialId
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[1].nextDialId
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 451298001}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].dialEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[14].dialEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[12].dialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[14].dialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: endDialEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: dials.Array.data[2].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1628,186 +1395,6 @@ PrefabInstance:
       propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 451298001}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviewClass
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviewClass
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviewClass
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviewClass
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviewClass
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ConfirmSkill
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetCharacterDetails
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CharacterCreateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[2].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[3].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[8].choices.Array.data[4].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[9].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[10].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[11].choices.Array.data[1].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461353473140951681, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: dials.Array.data[13].choices.Array.data[0].choiceEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1834,11 +1421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -40
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -22
+      value: -82
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1874,7 +1461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -9
+      value: -39
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1886,18 +1473,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6915398794184512292, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7036750732194001576, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7036750732194001576, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7036750732194001576, guid: 26090b5cf32cd434ca5dc6190397af52, type: 3}
-      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2001,8 +1576,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980186770}
-  - component: {fileID: 1980186772}
-  - component: {fileID: 1980186771}
   m_Layer: 5
   m_Name: CharacterStatsCreationPanel
   m_TagString: Untagged
@@ -2027,47 +1600,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -275, y: -75}
-  m_SizeDelta: {x: -650, y: -250}
+  m_AnchoredPosition: {x: -300, y: -50}
+  m_SizeDelta: {x: -650, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1980186771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980186769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1980186772
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980186769}
-  m_CullTransparentMesh: 1
 --- !u!114 &1984656827 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8652529993190540639, guid: d910ca0844ee7104c9af98a2fb2dea8b, type: 3}
