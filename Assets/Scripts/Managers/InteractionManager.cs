@@ -27,6 +27,9 @@ public class InteractionManager : MonoBehaviour
     public KeyCode m_SelectKey;
     public NPCConversation conversation;
     
+    private float inputCooldown = 0.2f;
+    private float lastInputTime = 0f;
+    
     private bool isConversationFinished = false;
 
     public InteractionHandler  testCharacteristic;
@@ -43,24 +46,31 @@ public class InteractionManager : MonoBehaviour
         if (collider.gameObject.CompareTag("Player") && !isConversationFinished)
         {
             ConversationManager.Instance.StartConversation(conversation);
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
     private void UpdateConversationInput()
     {
-        if (ConversationManager.Instance.IsConversationActive)
-        {
-            if (Input.GetKeyDown(m_UpKey))
-                ConversationManager.Instance.SelectPreviousOption();
-            else if (Input.GetKeyDown(m_DownKey))
-                ConversationManager.Instance.SelectNextOption();
-            else if (Input.GetKeyDown(m_SelectKey))
-                ConversationManager.Instance.PressSelectedOption();
-        }
+        if (!ConversationManager.Instance.IsConversationActive) return;
 
-        if (isConversationFinished)
+        if (Time.time - lastInputTime < inputCooldown) return; // on attend le cooldown
+
+        if (Input.GetKeyDown(m_UpKey))
         {
-            ConversationManager.Instance.EndConversation();
+            Debug.Log("up key");
+            ConversationManager.Instance.SelectPreviousOption();
+            lastInputTime = Time.time;
+        }
+        else if (Input.GetKeyDown(m_DownKey))
+        {
+            ConversationManager.Instance.SelectNextOption();
+            lastInputTime = Time.time;
+        }
+        else if (Input.GetKeyDown(m_SelectKey))
+        {
+            ConversationManager.Instance.PressSelectedOption();
+            lastInputTime = Time.time;
         }
     }
 

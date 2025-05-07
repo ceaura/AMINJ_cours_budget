@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
@@ -11,6 +12,10 @@ public class InteractionHandler : MonoBehaviour
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private InteractionDataSO interactionData;
     [SerializeField] private TextMeshProUGUI resultText;
+
+
+    [SerializeField] private AudioClip[] audioClip;
+    private AudioSource audioSource;
     
 
     private int _resultDice;
@@ -25,6 +30,11 @@ public class InteractionHandler : MonoBehaviour
     private void OnDisable()
     {
         Dice.OnDiceResult -= OnDiceResultReceived;
+    }
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void ChooseOption(int index)
@@ -74,7 +84,17 @@ public class InteractionHandler : MonoBehaviour
 
         Debug.Log($"[{interactionData.zone}] Test {currentOption.characteristic} : dé {diceResult} + stat {statValue} = {total} / requis : {currentOption.characteristicRequirement} → {(success ? "Réussi" : "Échoué")}");
 
-        resultText.text = success ? "Vous avez réussi" : "Vous avez échoué"; 
+        if (success)
+        {
+            resultText.text = "Le test est réussi, vous pouvez avancer !" ;
+            audioSource.clip = audioClip[0];
+        }
+        else
+        {
+            resultText.text = "Le test a échoué, vous devez recommencer" ;
+            audioSource.clip = audioClip[1];
+        }
+        audioSource.Play();
         GameStateManager.Instance.RecordInteraction(interactionData.zone, currentOptionIndex, success);
     }
 

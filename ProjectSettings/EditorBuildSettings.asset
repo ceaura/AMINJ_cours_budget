@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/CaracterCreation.unity
     guid: e6d1d8463c4f3fd4399b7e80ede407b3
   - enabled: 1
-    path: Assets/Scenes/TestExploration3D.unity
+    path: Assets/Scenes/Exploration3D.unity
     guid: 17de86a25fad9154086a8aa4ad970601
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e6eda0f090b42d4459f6ca4b63f9edaf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
